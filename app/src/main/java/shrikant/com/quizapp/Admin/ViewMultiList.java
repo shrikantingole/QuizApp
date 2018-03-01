@@ -70,7 +70,7 @@ public class ViewMultiList extends Fragment
     }
     private void getQueVolly()
     {
-        Toast.makeText(c, "Wait..", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(c, "Wait..", Toast.LENGTH_SHORT).show();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, new WebConfig().getAllMultiQue(),
                 new Response.Listener<String>()
                 {
