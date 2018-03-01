@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shrikant.com.quizapp.Admin.Registration"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:title="Registration"
+        app:titleTextColor="#fff"
+        android:id="@+id/toolbar"
+        app:titleTextAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_height="50dp"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="First Name"
+                android:padding="5dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:digits="qwertyuiopasdfghjklzxcvbnm "
+                android:id="@+id/Fname"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Last Name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:digits="qwertyuiopasdfghjklzxcvbnm "
+                android:padding="5dp"
+                android:id="@+id/Lname"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Mail id"
+                android:padding="5dp"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:id="@+id/Mail"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Password"
+                android:padding="5dp"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:id="@+id/Password"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Address"
+                android:padding="5dp"
+                android:id="@+id/Address"
+                android:imeOptions="actionDone"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+</android.support.v7.widget.CardView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/card1"
+        android:textAllCaps="false"
+        android:text="Register"
+        android:onClick="Register"
+        android:layout_height="wrap_content" />
+</LinearLayout>
