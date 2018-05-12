@@ -6,7 +6,7 @@ package shrikant.com.quizapp.Config;
 
 public class WebConfig
 {
-    private String Base="http://192.168.56.1:85/";
+    private String Base="http://192.168.43.233:85/";
     private String Registration=Base+"Quiz/Registration.php";
 
     public String getAllDescQue() {
